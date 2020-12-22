@@ -235,7 +235,7 @@
         </div>
         <div class="main">
             <div class="education info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title"
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title"
                         contenteditable="true">专业技能</span><span class="item-add" style="visibility: hidden;"><i
                             class="iconfont icon-playlistadd"></i></span><span class="unit-remove"
                         style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
@@ -279,7 +279,7 @@
                     <li>
                         <h3 contenteditable="true">深圳市万屏时代科技有限公司－后端开发（2017年11月-2019年7月）</h3>
                         <p contenteditable="true">
-                            参与万屏汇App后端开发，担任程序员。参与了用户管理、权限管理、商品管理、派单管理、商城等模块的设计与开发。</p>
+                            参与万屏汇App后端开发，担任程序员。参与了用户权限管理、订单管理、派单管理等模块的设计与开发。</p>
                         <span class="item-remove" style="visibility: hidden;"><i
                                 class="iconfont icon-delete"></i></span>
                     </li>
@@ -287,7 +287,7 @@
                         <h3 contenteditable="true">深圳市环迅志华软件科技有限公司－后端开发（2015年3月-2017年10月）</h3>
                         <p contenteditable="true"><span
                                 style="display: inline !important;">
-                                一：参与诺心商城系统的开发，担任程序员。主要的工作是负责商品管理、订单管理、购物车、支付等模块的设计、开发与测试。<br>
+                                一：参与诺心商城系统的开发，担任程序员。主要的工作是负责商品子系统、订单子系统、支付子系统的设计、开发与测试。<br>
                                 二：参与衣品汇鞋服微商城系统的开发，担任程序员。主要的工作是负责商品管理、订单管理、商品拼团、购物车、支付等模块的设计、开发与测试。<br>
                                 三：参与火投网贷系统的开发，担任程序员。主要的工作是负责会员管理（个人，企业，机构，账号），统计管理（用户，资金，业务报表）模块的开发与测试。<br>
                                 四：参与枫叶酒店商务系统的开发，担任程序员。主要的工作是负责用户管理模块和前台接待管理模块的开发与测试。
@@ -315,7 +315,7 @@
                 <ul class="experience-list">
                     <li>
                         <h3 contenteditable="true">巴呗体育App后端系统</h3>
-                        <p contenteditable="true">该App是融合体育新闻信息资讯，比赛数据分析，商品方案发布与购买为一体的App，系统分为新闻子系统、商品方案子系统，支付子系统、数据库子系统、安全子系统、库存子系统、物流子系统和财务子系统。考虑到后期版本要接入赛事直播等模块，架构上采用go-kit构建的微服务架构，使用ETCD做服务注册与发现，个子系统间采用Grpc进行远程调用，使用了Hystrix做服务熔断，项目中使用到的技术栈有GORM、Casbin、MySQL、Redis、MongoDB、Elasticsearch、Gocolly、Swagger等技术。</p>
+                        <p contenteditable="true">该App是融合体育新闻信息资讯，比赛数据分析，商品方案发布与购买为一体的App，系统分为新闻子系统、商品方案子系统，支付子系统、数据库子系统、安全子系统、库存子系统、物流子系统和财务子系统。考虑到后期版本要接入赛事直播等模块，架构上采用go-kit构建的微服务架构，使用ETCD做服务注册与发现，个子系统间采用Grpc进行远程调用，使用了Hystrix做服务熔断，使用golang/rate实现令牌桶实现服务限流，prometheus做服务监控，项目中使用到的技术栈有GORM、Casbin、MySQL、Redis、MongoDB、Elasticsearch、Gocolly、Swagger等技术。</p>
                         <span class="item-remove" style="visibility: hidden;"><i
                                 class="iconfont icon-delete"></i></span>
                     </li>
@@ -338,7 +338,7 @@
                     <li>
                         <h3 contenteditable="true">万屏汇App后端</h3>
                         <p contenteditable="true"><span
-                                style="display: inline !important;">该项目是通过线上线下结合的方式打造一站式LED屏安装、维修、租赁、采购的平台。项目分为前台和后台管理两个系统；原项目项目基于python开发，使用golang进行了重构，项目使用到的技术栈包括Gin+XORM框架搭建web服务，数据库使用MySQL、使用Redis做缓存服务、MongoDB存储日志、RabbitMq做消息中间件、Rpcx远程调用框架、Casbin+JWT进行后台权限管理认证、Swagger接口文档生成。使用docker进行项目集群部署。</span>
+                                style="display: inline !important;">该项目是通过线上线下结合的方式打造一站式LED屏安装、维修、租赁、采购的平台。项目分为前台和后台管理两个系统；原项目项目基于python开发，使用golang进行了重构，重构时采用新旧系统并行开发，维护老的系统的同时开发新型系统，将老系统运行过的业务在新系统中重新跑一遍看结果一不一致，项目使用到的技术栈包括Gin+XORM框架搭建web服务，数据库使用MySQL、使用Redis做缓存服务、MongoDB存储日志、RabbitMq做消息中间件、Rpcx远程调用框架、Casbin+JWT进行后台权限管理认证、Swagger接口文档生成。使用docker进行项目集群部署。</span>
                         </p>
                         <span class="item-remove" style="visibility: hidden;"><i
                                 class="iconfont icon-delete"></i></span>
@@ -352,7 +352,7 @@
                     </li>
                     <li>
                         <h3 contenteditable="true">诺心商城系统</h3>
-                        <p contenteditable="true">该项目是通过线上线下结合的方式提供订购蛋糕配送服务电商系统，分为购物子系统、支付子系统、数据库子系统、安全子系统、库存子系统、财务子系统。核心架构采用了Dubbo+Zookeeper的分布式架构。技术栈包括了SpringBoot、SpringMVC、MyBatis、Shiro、QuartZ、RabbitMQ、Kafka、Vue、Element-UI、Echart、Uni-APP、Swagger、Zookeeper，使用MySQL数据库，由MyCat管理，同时对MyCat做双机热备。采用Redis做缓存，MongoDB做日志存储。
+                        <p contenteditable="true">该项目是通过线上线下结合的方式提供订购蛋糕配送服务的电商系统，项目拆分为用户子系统、商品子系统、购物子系统、订单子系统、支付子系统、财务子系统等。核心架构采用了Dubbo+Zookeeper构建分布式架构。技术栈包括了SpringBoot、SpringMVC、MyBatis、Shiro、QuartZ、RabbitMQ、Vue、Element-UI、Echart、Uni-APP、Swagger、Zookeeper，使用MySQL数据库，由MyCat管理，同时对MyCat做双机热备。采用Redis做缓存，MongoDB做日志存储。
                         </p>
                         <span class="item-remove" style="visibility: hidden;"><i
                                 class="iconfont icon-delete"></i></span>
