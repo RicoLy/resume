@@ -215,7 +215,7 @@
 
                     <li>
                         <label class="left-label" contenteditable="true">其它</label><span class="label-value"
-                            contenteditable="true">Etcd、Zookeeper、rabbitmq、Etcd、Elasticsearch、Nginx、Docker、Linux运维</span><span class="item-remove"
+                            contenteditable="true">Etcd、Zookeeper、rabbitmq、Elasticsearch、Nginx、Docker、Linux运维</span><span class="item-remove"
                             style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
                     </li>
                 </ul>
@@ -271,7 +271,7 @@
                         <p contenteditable="true">
                             一：参与巴呗体育App后端系统开发，担任程序员。主要的工作是负责资讯信息管理，商品方案，订单管理，支付等模块的开发与测试。<br>
                             二：参与懂球帝App大数据锦囊专家推荐系统开发，担任程序员。主要的工作是负责商品方案、订单管理、支付等模块的开发与测试。<br>
-                            三：参与给料小程序的后端开发，担任程序员。主要的工作是用户模块，商品模块，订单模块的开发与测试
+                            三：参与给料小程序的后端开发，担任程序员。主要的工作是用户模块，商品模块，订单模块的开发与测试。
                         </p>
                         <span class="item-remove" style="visibility: hidden;"><i
                                 class="iconfont icon-delete"></i></span>
@@ -315,14 +315,14 @@
                 <ul class="experience-list">
                     <li>
                         <h3 contenteditable="true">巴呗体育App后端系统</h3>
-                        <p contenteditable="true">该App是融合体育新闻信息资讯，比赛数据分析，商品方案发布与购买为一体的App，系统分为新闻子系统、商品方案子系统，支付子系统、数据库子系统、安全子系统、库存子系统、物流子系统和财务子系统。考虑到后期版本要接入赛事直播等模块，架构上采用go-kit构建的微服务架构，使用ETCD做服务注册与发现，个子系统间采用Grpc进行远程调用，使用了Hystrix做服务熔断，使用golang/rate实现令牌桶实现服务限流，prometheus做服务监控，项目中使用到的技术栈有GORM、Casbin、MySQL、Redis、MongoDB、Elasticsearch、Gocolly、Swagger等技术。</p>
+                        <p contenteditable="true">该App是融合体育新闻信息资讯，比赛数据分析，商品方案发布与购买为一体的App，系统分为新闻子系统、商品方案子系统，支付子系统、用户权限子系统，优惠券子系统，和财务子系统等。考虑到后期版本要接入赛事直播等模块，架构上采用go-kit构建的微服务架构，使用ETCD做服务注册与发现，个子系统间采用Grpc进行远程调用，使用了Hystrix做服务熔断，使用golang/rate实现令牌桶实现服务限流，prometheus做服务监控，项目中使用到的技术栈有GORM、Casbin、MySQL、Redis、MongoDB、RabbitMQ、Elasticsearch、Gocolly、Swagger等技术。</p>
                         <span class="item-remove" style="visibility: hidden;"><i
                                 class="iconfont icon-delete"></i></span>
                     </li>
                     <li>
                         <h3 contenteditable="true">懂球帝App大数据锦囊</h3>
                         <p contenteditable="true">
-                            该项目H5内嵌到懂球帝的一个类似商城系统，用户可以大数据锦囊模块发布关于体育比赛比分信息的方案，同时也可以购买方案。该项目主要分为前台和后台；系统分为用户模块，商品方案模块，订单模块，支付模块，后台管理，信息统计等模块。项目使用到的技术栈包括Gin+GORM框架搭建web服务，数据库使用MySQL、使用Redis做缓存服务、MongoDB存储日志、RabbitMq做消息中间件、Rpcx远程调用框架、Casbin+JWT进行后台权限管理认证、Swagger接口文档生成。
+                            该项目是H5内嵌到懂球帝的一个类似商城系统，用户可以大数据锦囊模块发布关于体育比赛比分信息的方案，同时也可以购买方案。该项目主要分为前台和后台；系统分为用户模块，商品方案模块，订单模块，支付模块，后台管理，信息统计等模块。项目使用到的技术栈包括Gin+GORM框架搭建web服务，数据库使用MySQL、使用Redis做缓存服务、MongoDB存储日志、RabbitMQ做消息中间件、Rpcx远程调用框架、Casbin+JWT进行后台权限管理认证、Swagger接口文档生成。
                         </p>
                         <span class="item-remove" style="visibility: hidden;"><i
                                 class="iconfont icon-delete"></i></span>
@@ -359,7 +359,7 @@
                     </li>
                     <li>
                         <h3 contenteditable="true">衣品汇鞋服微商城系统</h3>
-                        <p contenteditable="true">衣品汇鞋服微商城系统是一个通过微信小程序销售服装鞋子的B2C电商系统，该系统采用前后端分离的架构设计，一共分为5个子系统，分别是微商城前后台系统、商城管理前后台系统、商城核心系统。业务上具备微商城所有的功能，包括微信支付。技术架构上面项目选择的SpringBoot、SpringMVC和MyBatis组成的SSM框架，并且融合了Shiro、Swagger等技术。后台前端项目采用了VUE+ElementUI技术架构，小程序采用的微信原生框架。数据库方面使用了MySQL，redis缓存，MongoDB做日志存储。
+                        <p contenteditable="true">衣品汇鞋服微商城系统是一个通过微信小程序销售服装鞋子的B2C电商系统，该系统采用前后端分离的架构设计，后端被拆分为用户模块、商品模块、购物模块、订单模块、支付模块等。业务上具备微商城所有的功能，包括微信支付。技术架构上面项目选择的SpringBoot、SpringMVC和MyBatis组成的SSM框架，并且融合了Shiro、Swagger等技术。后台前端项目采用了VUE+ElementUI技术架构，小程序采用的微信原生框架。数据库方面使用了MySQL，redis缓存，MongoDB做日志存储。
                         </p>
                         <span class="item-remove" style="visibility: hidden;"><i
                                 class="iconfont icon-delete"></i></span>
@@ -374,7 +374,7 @@
                     </li>
                     <li>
                         <h3 contenteditable="true">枫叶酒店商务系统</h3>
-                        <p contenteditable="true">该项目是专为岚豪酒店设计的信息管理系统，主要完成客户信息管理、前台接待管理、系统用户管理、统计报表四大模块，技术架构上面项目选择的struts2、Spring、hibernate组成的SSH框架，并且融合了Shiro、Swagger等技术。使用MySQL数据库,MongoDB做日志存储。
+                        <p contenteditable="true">该项目是专为岚豪酒店设计的信息管理系统，主要完成客户信息管理、前台接待管理、系统用户管理、统计报表四大模块，技术架构上面项目选择的struts2、Spring、Hibernate组成的SSH框架，并且融合了Shiro、Swagger等技术。使用MySQL数据库。
                         </p>
                         <span class="item-remove" style="visibility: hidden;"><i
                                 class="iconfont icon-delete"></i></span>
@@ -388,7 +388,7 @@
                 <hr>
                 <p contenteditable="true">
                     本人性格开朗、稳重、有活力，待人热情、真诚；<span
-                        style="display: inline !important;">对待工作认真负责，善于沟通、协调有较强的组织能力与团队精神；上进心强、勤于学习能不断提高自身的能力与综合素质。在未来的工作中，我将以充沛的精力，刻苦钻研的精神来努力工作，稳定地提高自己的工作能力，与企业同步发展。</span>
+                        style="display: inline !important;">能够尽快熟悉业务，能快速融入团队。 逻辑思维能力强，思路清楚，学习能力强，对新技术有着强烈的好奇心。上进心强、勤于学习能不断提高自身的能力与综合素质。对工作尽职尽责，乐于从事有挑战性的工作。乐于与用户以及同事和领导沟通，以便快速解决项目遇到的问题。做事勤勉，服从领导命令。</span>
                 </p>
             </div>
         </div>
